@@ -1,3 +1,4 @@
+import type { User } from "@/shared/types";
 import { type InferType, object, string } from "yup";
 
 export const LoginSchema = object({
@@ -6,3 +7,7 @@ export const LoginSchema = object({
 });
 
 export type LoginRequest = InferType<typeof LoginSchema>;
+
+export type LoginResponse = {
+	user: User;
+};
