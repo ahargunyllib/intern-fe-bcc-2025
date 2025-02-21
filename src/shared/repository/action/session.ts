@@ -35,5 +35,6 @@ export async function destroySession() {
 export async function getSession(): Promise<Session> {
 	const session = await _getSession();
 
-	return session;
+	// https://github.com/vercel/next.js/discussions/46137
+	return JSON.parse(JSON.stringify(session));
 }
