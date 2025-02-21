@@ -40,6 +40,9 @@ export const login = async (
 		};
 	}
 
+	// Simulate a delay
+	await new Promise((resolve) => setTimeout(resolve, 2000));
+
 	return {
 		success: true,
 		message: "Login successful",
