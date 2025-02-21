@@ -1,10 +1,10 @@
-import HeroSection from "@/features/landing/sections/hero-section";
+import HeroSectionContainer from "@/features/landing/containers/hero-section-container";
 import { Fragment } from "react";
 
 export default function Page() {
 	return (
 		<Fragment>
-			<HeroSection />
+			<HeroSectionContainer />
 		</Fragment>
 	);
 }

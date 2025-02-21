@@ -1,15 +1,20 @@
 "use client";
 
 import Button from "@/shared/components/ui/button";
+import type { User } from "@/shared/types";
 import { useRouter } from "next/navigation";
 
-export default function HeroSection() {
+type Props = {
+	user: User;
+};
+
+export default function LoggedInCard({ user }: Props) {
 	const router = useRouter();
 
 	return (
-		<section className="w-full h-screen flex flex-col gap-4 items-center justify-center">
-			You are not logged in, please login to continue
+		<>
+			<span>You are logged in as a {user.role}</span>
 			<Button onClick={() => router.push("/login")}>Login</Button>
-		</section>
+		</>
 	);
 }
