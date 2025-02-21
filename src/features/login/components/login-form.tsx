@@ -3,9 +3,12 @@
 import Button from "@/shared/components/ui/button";
 import { FormFieldInput } from "@/shared/components/ui/form";
 import { LoginSchema } from "@/shared/repository/dto/auth";
+import { useLoginMutation } from "@/shared/repository/query/auth";
 import { Form, Formik } from "formik";
 
 export default function LoginForm() {
+	const { mutate: login, isPending } = useLoginMutation();
+
 	return (
 		<Formik
 			validationSchema={LoginSchema}
@@ -15,12 +18,15 @@ export default function LoginForm() {
 			}}
 			onSubmit={(values) => {
 				console.log(values);
+				login(values);
 			}}
 		>
 			<Form className="flex flex-col gap-4">
 				<FormFieldInput name="email" label="Email" />
 				<FormFieldInput name="password" label="Password" type="password" />
-				<Button type="submit">Login</Button>
+				<Button type="submit" disabled={isPending}>
+					Login
+				</Button>
 			</Form>
 		</Formik>
 	);
