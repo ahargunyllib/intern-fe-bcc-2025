@@ -4,7 +4,7 @@ const EnvSchema = object({
 	APP_URL: string().required(),
 	API_URL: string().required(),
 	API_KEY: string().required(),
-	SESSION_PASSWORD: string().required(),
+	SESSION_PASSWORD: string().required().min(32),
 });
 
 function validateEnv() {
