@@ -22,8 +22,17 @@ export default function LoginForm() {
 			}}
 		>
 			<Form className="flex flex-col gap-4">
-				<FormFieldInput name="email" label="Email" />
-				<FormFieldInput name="password" label="Password" type="password" />
+				<FormFieldInput
+					name="email"
+					label="Email"
+					placeholder="user/admin@example.com"
+				/>
+				<FormFieldInput
+					name="password"
+					label="Password"
+					type="password"
+					placeholder="password"
+				/>
 				<Button type="submit" disabled={isPending}>
 					Login
 				</Button>
