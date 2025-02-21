@@ -39,13 +39,14 @@ export const useLogoutMutation = () => {
 
 	return useMutation({
 		mutationKey: ["auth"],
+		mutationFn: async () => {},
 		onSuccess: async () => {
 			// toast.success("Logout successful");
 
 			await destroySession();
 			router.push("/");
 
-			queryClient.refetchQueries({ queryKey: ["auth"] });
+			queryClient.resetQueries({ queryKey: ["auth"] });
 		},
 	});
 };
