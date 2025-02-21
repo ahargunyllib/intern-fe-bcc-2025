@@ -1,3 +1,5 @@
+"use client";
+
 import LoggedInCard from "@/features/landing/components/logged-in-card";
 import NotLoggedInCard from "@/features/landing/components/not-logged-in-card";
 import { useSessionQuery } from "@/shared/repository/query/auth";
