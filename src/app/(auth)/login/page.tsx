@@ -1,29 +1,12 @@
-"use client";
-import Button from "@/shared/components/ui/button";
-import { FormFieldInput } from "@/shared/components/ui/form";
-import { LoginSchema } from "@/shared/repository/dto/auth";
-import { Form, Formik } from "formik";
+import LoginForm from "@/features/login/components/login-form";
 
 export default function Page() {
 	return (
-		<div>
-			<h1>Login Page</h1>
-			<Formik
-				validationSchema={LoginSchema}
-				initialValues={{
-					email: "",
-					password: "",
-				}}
-				onSubmit={(values) => {
-					console.log(values);
-				}}
-			>
-				<Form>
-					<FormFieldInput name="email" label="Email" />
-					<FormFieldInput name="password" label="Password" type="password" />
-					<Button type="submit">Login</Button>
-				</Form>
-			</Formik>
+		<div className="w-full h-screen flex items-center justify-center">
+			<div className="mx-4 max-w-sm w-full h-fit border rounded-lg p-4 flex flex-col gap-4 shadow-md">
+				<h1 className="text-2xl font-bold text-center">Login</h1>
+				<LoginForm />
+			</div>
 		</div>
 	);
 }

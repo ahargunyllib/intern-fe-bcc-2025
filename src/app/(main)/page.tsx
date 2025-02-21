@@ -1,3 +1,10 @@
-export default function Home() {
-	return <div>Main Page</div>;
+import HeroSection from "@/features/landing/sections/hero-section";
+import { Fragment } from "react";
+
+export default function Page() {
+	return (
+		<Fragment>
+			<HeroSection />
+		</Fragment>
+	);
 }
