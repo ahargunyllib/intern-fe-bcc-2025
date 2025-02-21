@@ -1,3 +1,5 @@
+"use client";
+
 import { login } from "@/shared/repository/action/auth";
 import {
 	createSession,

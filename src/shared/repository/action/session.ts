@@ -1,3 +1,5 @@
+"use server";
+
 import { type Session, sessionOptions } from "@/shared/lib/session";
 import type { JWTClaims } from "@/shared/types";
 import { getIronSession } from "iron-session";
