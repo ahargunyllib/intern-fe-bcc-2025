@@ -20,7 +20,7 @@ export function FormFieldInput({ name, label, ...props }: Props) {
 			</label>
 			<Input id={name} {...props} {...field} />
 			<span className="text-red-500">
-				<ErrorMessage name="email" />
+				<ErrorMessage name={name} />
 			</span>
 		</div>
 	);
