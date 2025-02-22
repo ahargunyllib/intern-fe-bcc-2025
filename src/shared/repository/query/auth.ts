@@ -9,6 +9,7 @@ import {
 import type { LoginRequest } from "@/shared/repository/dto/auth";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
+import { toast } from "sonner";
 
 export const useLoginMutation = () => {
 	const queryClient = useQueryClient();
@@ -19,11 +20,11 @@ export const useLoginMutation = () => {
 		mutationFn: (data: LoginRequest) => login(data),
 		onSuccess: async (res) => {
 			if (!res.success) {
-				// toast.error(res.message);
+				toast.error(res.message);
 				return;
 			}
 
-			// toast.success(res.message);
+			toast.success(res.message);
 
 			await createSession(res.data);
 			router.push("/dashboard");
@@ -41,7 +42,7 @@ export const useLogoutMutation = () => {
 		mutationKey: ["auth"],
 		mutationFn: async () => {},
 		onSuccess: async () => {
-			// toast.success("Logout successful");
+			toast.success("Logout successful");
 
 			await destroySession();
 			router.push("/");
