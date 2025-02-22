@@ -1,9 +1,9 @@
-import DummyContainer from "@/features/dashboard/containers/dummy-container";
+import AdminDummy from "@/features/dashboard/components/admin-dummy";
 
 export default function Page() {
 	return (
 		<div className="w-full h-screen flex items-center justify-center">
-			<DummyContainer />
+			<AdminDummy />
 		</div>
 	);
 }
