@@ -4,6 +4,7 @@ import ReactQueryProvider from "@/shared/components/provider/tanstack";
 import Modal from "@/shared/components/ui/modal";
 import { useModalStore } from "@/shared/stores/use-modal-store";
 import type { PropsWithChildren } from "react";
+import { Toaster } from "sonner";
 
 export default function Provider({ children }: PropsWithChildren) {
 	const {
@@ -19,6 +20,7 @@ export default function Provider({ children }: PropsWithChildren) {
 			<Modal isOpen={isOpen} closeModal={closeModal} title={title}>
 				{modalChildren}
 			</Modal>
+			<Toaster richColors position="bottom-right" />
 		</ReactQueryProvider>
 	);
 }
