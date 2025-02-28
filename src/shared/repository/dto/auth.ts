@@ -11,3 +11,10 @@ export type LoginRequest = InferType<typeof LoginSchema>;
 export type LoginResponse = {
 	user: User;
 };
+
+export const RegisterSchema = object({
+	display_name: string().required("Display name is required"),
+	email: string().email("Email is invalid").required("Email is required"),
+});
+
+export type RegisterRequest = InferType<typeof RegisterSchema>;
