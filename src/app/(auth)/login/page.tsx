@@ -10,7 +10,7 @@ export default function Page() {
 			</div>
 			<div className="col-span-1 z-10 flex flex-col h-full p-16 justify-between">
 				<div className="w-2/4 aspect-square rounded-full bg-white" />
-				<div className="flex flex-col gap-4 text-white">
+				<div className="flex flex-col gap-4 text-white w-3/5 text-pretty">
 					<h1 className="font-bold text-6xl">
 						Selamat datang di Locapreneur.id
 					</h1>
