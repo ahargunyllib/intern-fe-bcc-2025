@@ -25,7 +25,7 @@ export default function Page() {
 				<span className="font-light text-xs">
 					Sudah punya akun?{" "}
 					<Link href="/login" className="hover:underline font-bold text-xs">
-						Login Sekarang
+						Login Sekarang!
 					</Link>
 				</span>
 			</div>
