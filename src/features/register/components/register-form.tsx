@@ -5,8 +5,11 @@ import Button from "@/shared/components/ui/button";
 import { FormFieldInput } from "@/shared/components/ui/form";
 import { RegisterSchema } from "@/shared/repository/dto/auth";
 import { Form, Formik } from "formik";
+import { useRouter } from "next/navigation";
+import { toast } from "sonner";
 
 export default function RegisterForm() {
+	const router = useRouter();
 	return (
 		<Formik
 			validationSchema={RegisterSchema}
@@ -16,6 +19,14 @@ export default function RegisterForm() {
 			}}
 			onSubmit={(values) => {
 				console.log(values);
+				toast.warning("Fitur belum bisa digunakan", {
+					description: "Lanjut ke halaman onboarding",
+					action: (
+						<Button onClick={() => router.push("/onboarding")}>
+							Onboarding
+						</Button>
+					),
+				});
 			}}
 		>
 			<Form className="flex flex-col gap-4">
