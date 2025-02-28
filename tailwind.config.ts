@@ -8,6 +8,9 @@ export default {
 		"./src/features/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
+		fontFamily: {
+			sans: ["Inter", "sans-serif"],
+		},
 		extend: {
 			colors: {
 				background: "var(--background)",
