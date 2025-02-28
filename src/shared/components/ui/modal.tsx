@@ -31,7 +31,7 @@ export default function Modal({ children, isOpen, closeModal, title }: Props) {
 						size="icon"
 						type="button"
 						onClick={closeModal}
-						className="text-black size-fit hover:bg-transparent"
+						className="text-foreground size-fit hover:bg-transparent"
 					>
 						<LucideX />
 					</Button>

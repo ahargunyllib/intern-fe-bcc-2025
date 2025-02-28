@@ -32,7 +32,7 @@ export default function RegisterForm() {
 					placeholder="Email"
 					prefixIcon={<LucideMail width={16} height={16} />}
 				/>
-				<Button type="submit" disabled={false} className="mt-4 bg-[#5A81FA]">
+				<Button type="submit" disabled={false} className="mt-4">
 					Buat Akun
 				</Button>
 			</Form>

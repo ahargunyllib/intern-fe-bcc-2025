@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Page() {
 	return (
-		<section className="h-screen w-screen bg-[#FAFAF0] grid grid-cols-2 grid-rows-1 gap-0">
-			<div className="h-screen w-screen absolute -z-0 ">
+		<section className="h-screen w-screen grid grid-cols-2 grid-rows-1 gap-0">
+			<div className="h-screen w-screen absolute -z-0 overflow-y-hidden">
 				<Blob />
 			</div>
 			<div className="col-span-1 z-10 flex flex-col h-full p-16 justify-between">

@@ -28,11 +28,11 @@ function Radio({
 					name={name}
 					defaultChecked={defaultChecked}
 					disabled={disabled}
-					className="peer col-start-1 row-start-1 appearance-none shrink-0 w-4 h-4 border-2 border-blue-500 rounded-full focus:outline-none focus:ring-offset-0 focus:ring-2 focus:ring-blue-400 disabled:border-gray-400"
+					className="peer col-start-1 row-start-1 appearance-none shrink-0 w-4 h-4 border-2 border-primary rounded-full focus:outline-none focus:ring-offset-0 focus:ring-2 focus:ring-secondary disabled:border-muted-foreground"
 					onChange={onChange}
 					value={value}
 				/>
-				<div className="pointer-events-none col-start-1 row-start-1 w-2 h-2 rounded-full peer-checked:bg-blue-500 peer-checked:peer-disabled:bg-gray-400" />
+				<div className="pointer-events-none col-start-1 row-start-1 w-2 h-2 rounded-full peer-checked:bg-primarborder-primary peer-checked:peer-disabled:bg-muted-foreground" />
 			</div>
 			<label
 				htmlFor={id}

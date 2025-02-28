@@ -24,14 +24,14 @@ export function FormFieldInput({
 				htmlFor={name}
 				className={cn(
 					"font-bold",
-					meta.error && meta.touched ? "text-red-500" : "",
+					meta.error && meta.touched ? "text-destructive" : "",
 				)}
 			>
 				{label}
 			</label>
 			<div className="relative">
 				{PrefixIcon && (
-					<div className="text-muted-foreground/80 bg-[#F1F1F1] rounded-md pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 pe-3 peer-disabled:opacity-50 border border-black border-r">
+					<div className="text-muted-foreground/80 bg-accent rounded-md pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 pe-3 peer-disabled:opacity-50 border border-r">
 						{PrefixIcon}
 					</div>
 				)}
@@ -40,12 +40,12 @@ export function FormFieldInput({
 					{...props}
 					{...field}
 					className={cn(
-						"placeholder:font-light placeholder:text-xs bg-white border border-black",
+						"placeholder:font-light placeholder:text-xs bg-white border",
 						(PrefixIcon || SuffixIcon) && "peer ps-12 pe-12",
 					)}
 				/>
 				{SuffixIcon && (
-					<div className="text-muted-foreground/80 bg-[#F1F1F1] rounded-md pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center ps-3 pe-3 peer-disabled:opacity-50 border border-black">
+					<div className="text-muted-foreground/80 bg-accent rounded-md pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center ps-3 pe-3 peer-disabled:opacity-50 border">
 						{SuffixIcon}
 					</div>
 				)}
