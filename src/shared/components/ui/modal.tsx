@@ -1,4 +1,4 @@
-import { LucideX } from "@/shared/components/icons/lucide-x";
+import { LucideX } from "@/shared/components/icons";
 import Button from "@/shared/components/ui/button";
 
 type Props = {
