@@ -45,7 +45,7 @@ export function FormFieldInput({
 					)}
 				/>
 				{SuffixIcon && (
-					<div className="bg-accent rounded-md pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center ps-3 pe-3 peer-disabled:opacity-50 border">
+					<div className="absolute inset-y-0 end-0 flex items-center justify-center pe-3 peer-disabled:opacity-50">
 						{SuffixIcon}
 					</div>
 				)}
