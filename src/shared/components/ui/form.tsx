@@ -31,7 +31,7 @@ export function FormFieldInput({
 			</label>
 			<div className="relative">
 				{PrefixIcon && (
-					<div className="text-muted-foreground/80 bg-accent rounded-md pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 pe-3 peer-disabled:opacity-50 border border-r">
+					<div className="bg-accent rounded-md pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 pe-3 peer-disabled:opacity-50 border border-r">
 						{PrefixIcon}
 					</div>
 				)}
@@ -45,7 +45,7 @@ export function FormFieldInput({
 					)}
 				/>
 				{SuffixIcon && (
-					<div className="text-muted-foreground/80 bg-accent rounded-md pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center ps-3 pe-3 peer-disabled:opacity-50 border">
+					<div className="bg-accent rounded-md pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center ps-3 pe-3 peer-disabled:opacity-50 border">
 						{SuffixIcon}
 					</div>
 				)}
