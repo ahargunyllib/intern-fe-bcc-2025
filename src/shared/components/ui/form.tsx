@@ -41,7 +41,9 @@ export function FormFieldInput({
 					{...field}
 					className={cn(
 						"placeholder:font-light placeholder:text-xs bg-white border",
-						(PrefixIcon || SuffixIcon) && "peer ps-12 pe-12",
+						(PrefixIcon || SuffixIcon) && "peer",
+						PrefixIcon && "ps-12",
+						SuffixIcon && "pe-12",
 					)}
 				/>
 				{SuffixIcon && (
