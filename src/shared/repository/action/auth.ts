@@ -2,7 +2,7 @@
 
 import type { LoginRequest, LoginResponse } from "@/shared/repository/dto/auth";
 import type { User } from "@/shared/types";
-import type { Response } from "@/shared/types/response";
+import type { Response } from "@/shared/types";
 
 const dummyCredentials: (User & {
 	password: string;
