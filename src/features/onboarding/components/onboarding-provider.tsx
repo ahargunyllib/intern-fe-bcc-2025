@@ -9,15 +9,15 @@ import { useRouter } from "next/navigation";
 import { type PropsWithChildren, useState } from "react";
 
 export default function OnboardingProvider({ children }: PropsWithChildren) {
-	const onboardingRoute = [
+	const steps = [
 		<VerifyEmailSection key="VerifyEmailSection" />,
 		<PasswordFormSection key="PasswordFormSection" />,
 		<ProfileFormSection key="ProfileFormSection" />,
 	] as const;
 
-	type OnboardingRoute = Indexes<typeof onboardingRoute>;
+	type StepIndexes = Indexes<typeof steps>;
 
-	const [step, setStep] = useState<OnboardingRoute>(0);
+	const [step, setStep] = useState<StepIndexes>(0);
 	const router = useRouter();
 
 	const prevStep = () => {
@@ -26,23 +26,23 @@ export default function OnboardingProvider({ children }: PropsWithChildren) {
 				router.back();
 				return prevStep;
 			}
-			return (prevStep - 1) as OnboardingRoute;
+			return (prevStep - 1) as StepIndexes;
 		});
 	};
 
 	const nextStep = () => {
 		setStep((prevStep) => {
-			if (prevStep === onboardingRoute.length - 1) {
+			if (prevStep === steps.length - 1) {
 				router.replace("/");
 				return prevStep;
 			}
-			return (prevStep + 1) as OnboardingRoute;
+			return (prevStep + 1) as StepIndexes;
 		});
 	};
 
 	return (
 		<OnboardingContext.Provider
-			value={{ step, prevStep, nextStep, steps: onboardingRoute }}
+			value={{ step, prevStep, nextStep, steps: steps }}
 		>
 			{children}
 		</OnboardingContext.Provider>
