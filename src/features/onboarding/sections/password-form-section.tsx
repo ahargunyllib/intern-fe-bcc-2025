@@ -1,18 +1,12 @@
-import {
-	LucideEye,
-	LucideEyeOff,
-	LucideKeyRound,
-} from "@/shared/components/icons";
+import { useOnboarding } from "@/features/onboarding/hooks/use-onboarding";
+import { LucideEye, LucideEyeOff } from "@/shared/components/icons";
 import Button from "@/shared/components/ui/button";
 import { FormFieldInput } from "@/shared/components/ui/form";
-import { login } from "@/shared/repository/action/auth";
-import { LoginSchema } from "@/shared/repository/dto/auth";
 import { Form, Formik } from "formik";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function PasswordFormSection() {
-	const router = useRouter();
+	const { nextStep } = useOnboarding();
 
 	const [isShowPassword, setIsShowPassword] = useState({
 		password: false,
@@ -43,9 +37,9 @@ export default function PasswordFormSection() {
 						<Form className="flex flex-col gap-4">
 							<FormFieldInput
 								name="password"
-								label="Password"
+								label="Kata Sandi"
 								type={isShowPassword.password ? "text" : "password"}
-								placeholder="Masukkan password"
+								placeholder="Masukkan kata sandi"
 								suffixIcon={
 									<button
 										className="text-foreground/50 hover:text-foreground transition-colors duration-150 ease-in-out"
@@ -62,9 +56,9 @@ export default function PasswordFormSection() {
 							/>
 							<FormFieldInput
 								name="confirmPassword"
-								label="Ulangi Password"
+								label="Ulangi Kata Sandi"
 								type={isShowPassword.confirmPassword ? "text" : "password"}
-								placeholder="Masukkan ulang password"
+								placeholder="Masukkan ulang kata sandi"
 								suffixIcon={
 									<button
 										className="text-foreground/50 hover:text-foreground transition-colors duration-150 ease-in-out"
@@ -80,7 +74,7 @@ export default function PasswordFormSection() {
 								}
 							/>
 							<Button
-								onClick={() => router.replace("/")}
+								onClick={() => nextStep()}
 								type="button"
 								className="w-fit"
 							>

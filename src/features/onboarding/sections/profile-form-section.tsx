@@ -5,7 +5,7 @@ import Input from "@/shared/components/ui/input";
 import type { ReactNode } from "react";
 
 export default function ProfileFormSection() {
-	const { setStep } = useOnboarding();
+	const { nextStep } = useOnboarding();
 
 	return (
 		<div className="h-full md:h-screen flex items-center justify-center p-8 pt-32">
@@ -33,7 +33,7 @@ export default function ProfileFormSection() {
 					</div>
 				</div>
 
-				<Button onClick={() => setStep(2)} type="button" className="w-full">
+				<Button onClick={() => nextStep()} type="button" className="w-full">
 					Simpan
 				</Button>
 			</div>

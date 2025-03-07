@@ -1,8 +1,10 @@
-import { createContext } from "react";
+import { type JSX, createContext } from "react";
 
 type OnboardingContextType = {
+	steps: readonly JSX.Element[];
 	step: number;
-	setStep: (step: number) => void;
+	nextStep: () => void;
+	prevStep: () => void;
 };
 
 export const OnboardingContext = createContext<
