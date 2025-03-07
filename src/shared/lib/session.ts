@@ -25,5 +25,6 @@ export const sessionOptions: SessionOptions = {
 		//  allow 1 minute buffer
 		maxAge: MAX_AGE - 60 * 1000,
 		secure: true,
+		sameSite: "strict",
 	},
 };
