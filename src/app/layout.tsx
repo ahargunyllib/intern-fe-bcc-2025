@@ -4,8 +4,21 @@ import "@/shared/styles/globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Intern FE BCC 2025",
-	description: "Intern FE BCC 2025 by Kelompok 11",
+	title: "Locapreneur",
+	description:
+		"Platform yang responsif dan ramah pengguna untuk mendukung UMKM (Usaha Mikro, Kecil, dan Menengah) dalam mempromosikan produk dan jasa, menganalisis tren pasar, mendapatkan edukasi keuangan, serta berinteraksi dengan komunitas.",
+	icons: "/logo.png",
+	openGraph: {
+		title: "Locapreneur",
+		description:
+			"Platform yang responsif dan ramah pengguna untuk mendukung UMKM (Usaha Mikro, Kecil, dan Menengah) dalam mempromosikan produk dan jasa, menganalisis tren pasar, mendapatkan edukasi keuangan, serta berinteraksi dengan komunitas.",
+	},
+	twitter: {
+		title: "Locapreneur",
+		description:
+			"Platform yang responsif dan ramah pengguna untuk mendukung UMKM (Usaha Mikro, Kecil, dan Menengah) dalam mempromosikan produk dan jasa, menganalisis tren pasar, mendapatkan edukasi keuangan, serta berinteraksi dengan komunitas.",
+		card: "summary_large_image",
+	},
 };
 
 export default function RootLayout({
