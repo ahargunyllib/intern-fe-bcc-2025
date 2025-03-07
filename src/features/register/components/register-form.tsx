@@ -32,8 +32,8 @@ export default function RegisterForm() {
 			<Form className="flex flex-col gap-4">
 				<FormFieldInput
 					name="display_name"
-					label="Display Name"
-					placeholder="Name"
+					label="Nama Tampilan"
+					placeholder="Nama"
 					prefixIcon={<LucideUser width={16} height={16} />}
 				/>
 				<FormFieldInput

@@ -42,7 +42,7 @@ export default function LoginForm() {
 				/>
 				<FormFieldInput
 					name="password"
-					label="Password"
+					label="Kata Sandi"
 					type={isShowPassword ? "text" : "password"}
 					placeholder="password"
 					prefixIcon={<LucideKeyRound width={16} height={16} />}
