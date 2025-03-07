@@ -1,7 +1,11 @@
+import Image from "next/image";
+
 export default function Header() {
 	return (
 		<div className="p-8 w-full bg-primary absolute flex flex-row gap-4 items-center">
-			<div className="size-12 rounded-full bg-white" />
+			<div className="relative size-12">
+				<Image src="/logo.png" alt="Locapreneur Logo" fill />
+			</div>
 			<span className="text-white font-extrabold text-xl hidden sm:block">
 				Locapreneur.id
 			</span>
