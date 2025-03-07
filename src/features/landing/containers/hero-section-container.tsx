@@ -9,7 +9,7 @@ export default function HeroSectionContainer() {
 
 	if (isLoading) {
 		return (
-			<div className="mx-4 max-w-sm w-full h-fit border rounded-lg p-4 flex flex-col gap-4 shadow-md">
+			<div className="mx-4 sm:mx-0 max-w-sm w-full h-fit border rounded-lg p-4 flex flex-col gap-4 shadow-md">
 				<div className="w-full h-12 bg-slate-500 rounded-md animate-pulse" />
 				<div className="w-full h-8 bg-slate-500 rounded-md animate-pulse" />
 			</div>
@@ -18,7 +18,7 @@ export default function HeroSectionContainer() {
 
 	if (error) {
 		return (
-			<div className="mx-4 max-w-sm w-full h-fit border rounded-lg p-4 flex flex-col gap-4 shadow-md">
+			<div className="mx-4 sm:mx-0 max-w-sm w-full h-fit border rounded-lg p-4 flex flex-col gap-4 shadow-md">
 				<h2 className="text-lg font-semibold text-center">An error occurred</h2>
 				<p className="text-center text-red-500">{error.message}</p>
 			</div>

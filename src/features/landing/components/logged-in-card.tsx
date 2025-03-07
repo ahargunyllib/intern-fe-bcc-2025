@@ -12,7 +12,7 @@ export default function LoggedInCard({ user }: Props) {
 	const { mutate: logout, isPending } = useLogoutMutation();
 
 	return (
-		<div className="mx-4 max-w-sm w-full h-fit border rounded-lg p-4 flex flex-col gap-4 shadow-md">
+		<div className="mx-4 sm:mx-0 max-w-sm w-full h-fit border rounded-lg p-4 flex flex-col gap-4 shadow-md">
 			<h2 className="text-lg font-semibold text-center">
 				You are logged in as a {user.role}
 			</h2>
