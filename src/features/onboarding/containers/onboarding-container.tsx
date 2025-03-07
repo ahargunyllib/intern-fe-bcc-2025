@@ -1,7 +1,7 @@
 "use client";
 
+import Header from "@/features/onboarding/components/header";
 import { useOnboarding } from "@/features/onboarding/hooks/use-onboarding";
-import Header from "@/shared/components/header";
 
 export default function OnboardingContainer() {
 	const { step, steps } = useOnboarding();
