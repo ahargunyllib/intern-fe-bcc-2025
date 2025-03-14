@@ -1,6 +1,8 @@
 export * from "./blob";
 
 export * from "./ic-baseline-edit";
+export * from "./iconamoon-dislike";
+export * from "./iconamoon-like";
 export * from "./lineicons-search-2";
 export * from "./logos-tiktok-icon";
 export * from "./logos-whatsapp-icon";
@@ -14,6 +16,7 @@ export * from "./material-symbols-other-houses";
 export * from "./material-symbols-person-2";
 export * from "./material-symbols-post-add";
 export * from "./mdi-home";
+export * from "./mdi-share";
 export * from "./mingcute-book-line";
 export * from "./ri-customer-service-2-fill";
 export * from "./simple-icons-shopee";
