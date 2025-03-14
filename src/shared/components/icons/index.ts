@@ -1,7 +1,7 @@
 export * from "./blob";
 
+export * from "./ic-baseline-edit";
 export * from "./lineicons-search-2";
-export * from "./simple-icons-shopee";
 export * from "./logos-tiktok-icon";
 export * from "./logos-whatsapp-icon";
 export * from "./lucide-eye";
@@ -15,4 +15,5 @@ export * from "./material-symbols-person-2";
 export * from "./mdi-home";
 export * from "./mingcute-book-line";
 export * from "./ri-customer-service-2-fill";
+export * from "./simple-icons-shopee";
 export * from "./skill-icons-instagram";
