@@ -1,17 +1,9 @@
-import { LineiconsSearch2 } from "@/shared/components/icons";
-import Input from "@/shared/components/ui/input";
+import SearchBar from "@/shared/components/search-bar";
 
 export default function Page() {
 	return (
 		<div className="flex flex-col gap-4 w-full">
-			<div className="p-4 bg-secondary shadow-md rounded-md">
-				<div className="relative">
-					<div className="pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 pe-3 peer-disabled:opacity-50">
-						<LineiconsSearch2 fontSize={20} />
-					</div>
-					<Input className="placeholder:font-light placeholder:text-xs bg-white border ps-12 peer" />
-				</div>
-			</div>
+			<SearchBar />
 			<div className="w-full p-4 bg-white shadow-md rounded-md flex flex-col gap-2">
 				<h2 className="font-bold text-2xl">Edukasi</h2>
 				<div className="flex flex-row gap-4 w-full overflow-x-auto">
