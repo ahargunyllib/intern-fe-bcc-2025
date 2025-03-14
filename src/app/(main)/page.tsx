@@ -1,4 +1,9 @@
-import { MdiHome } from "@/shared/components/icons";
+import {
+	IconamoonDislike,
+	IconamoonLike,
+	LineiconsSearch2,
+	MdiShare,
+} from "@/shared/components/icons";
 import Input from "@/shared/components/ui/input";
 import Image from "next/image";
 
@@ -8,7 +13,7 @@ export default function Page() {
 			<div className="p-4 bg-secondary shadow-md rounded-md">
 				<div className="relative">
 					<div className="pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 pe-3 peer-disabled:opacity-50">
-						<MdiHome />
+						<LineiconsSearch2 fontSize={20} />
 					</div>
 					<Input className="placeholder:font-light placeholder:text-xs bg-white border ps-12 peer" />
 				</div>
@@ -55,19 +60,26 @@ export default function Page() {
 						laboriosam? Unde blanditiis voluptates cupiditate sapiente eius quis
 						sunt dolores.
 					</p>
-					<div className="bg-gray-400 h-40" />
+					<div className="h-48 relative ">
+						<Image
+							src={`https://picsum.photos/seed/${index + 1}/1920/1080`}
+							alt="Random Image"
+							fill
+							objectFit="cover"
+						/>
+					</div>
 					<div className="flex flex-row items-start justify-between">
 						<div className="flex flex-row gap-2">
-							<div className="flex flex-row items-center gap-1">
-								<MdiHome />
+							<div className="flex flex-row items-center gap-1 hover:cursor-pointer">
+								<IconamoonLike />
 								<span>10</span>
 							</div>
-							<div className="flex flex-row items-center gap-1">
-								<MdiHome />
+							<div className="flex flex-row items-center gap-1 hover:cursor-pointer">
+								<IconamoonDislike />
 								<span>10</span>
 							</div>
-							<div className="flex flex-row items-center gap-1">
-								<MdiHome />
+							<div className="flex flex-row items-center gap-1 hover:cursor-pointer">
+								<MdiShare />
 								<span>10</span>
 							</div>
 						</div>
