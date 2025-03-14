@@ -20,13 +20,6 @@ export default function CatalogPanel({ catalogs }: Props) {
 						<Image src={catalog.url} alt="Catalog" fill objectFit="cover" />
 					</div>
 				))}
-				{Array.from({ length: 4 }).map((_, index) => (
-					<div
-						// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-						key={index}
-						className="bg-gray-400 hover:-translate-y-1 transition-transform duration-300 ease-in-out cursor-pointer h-40"
-					/>
-				))}
 			</div>
 		</div>
 	);

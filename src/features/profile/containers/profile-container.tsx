@@ -26,14 +26,14 @@ const dummyUser = {
 const dummyCatalogs = [
 	{
 		name: "Catalog 1",
-		url: "/dummy-catalog-1.png",
+		url: `https://picsum.photos/seed/${Math.random() * 100}/1920/1080`,
 	},
 	{
 		name: "Catalog 2",
-		url: "/dummy-catalog-2.png",
+		url: `https://picsum.photos/seed/${Math.random() * 100}/1920/1080`,
 	},
 	{
 		name: "Catalog 3",
-		url: "/dummy-catalog-3.png",
+		url: `https://picsum.photos/seed/${Math.random() * 100}/1920/1080`,
 	},
 ];
