@@ -16,7 +16,7 @@ export default function TrendingPostPanel({ trendingPosts }: Props) {
 			{trendingPosts.map((trendingPost) => (
 				<div
 					key={trendingPost.id}
-					className="flex flex-col gap-2 hover:cursor-pointer"
+					className="flex flex-col gap-2 hover:cursor-pointer z-20"
 				>
 					<div className="flex flex-row items-center gap-2">
 						<div className="relative size-8">

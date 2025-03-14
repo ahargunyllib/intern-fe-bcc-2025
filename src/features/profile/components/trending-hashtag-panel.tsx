@@ -9,7 +9,7 @@ export default function TrendingHashtagPanel({ trendingHashtags }: Props) {
 			{trendingHashtags.map((tag) => (
 				<div
 					key={tag}
-					className="flex flex-row gap-2 items-center cursor-pointer"
+					className="flex flex-row gap-2 items-center cursor-pointer z-20"
 				>
 					<span className="font-bold text-2xl">#</span>
 					<span className="font-semibold text-lg hover:underline hover:underline-offset-4 ">

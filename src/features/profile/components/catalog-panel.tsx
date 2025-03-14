@@ -15,7 +15,7 @@ export default function CatalogPanel({ catalogs }: Props) {
 				{catalogs.map((catalog) => (
 					<div
 						key={catalog.name}
-						className="relative bg-gray-400 hover:-translate-y-1 transition-transform duration-300 ease-in-out cursor-pointer h-40"
+						className="relative bg-gray-400 z-20 hover:-translate-y-1 transition-transform duration-300 ease-in-out cursor-pointer h-40"
 					>
 						<Image src={catalog.url} alt="Catalog" fill objectFit="cover" />
 					</div>
