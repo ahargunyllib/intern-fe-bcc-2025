@@ -39,12 +39,12 @@ export default function ProfilePanel({ user }: Props) {
 						objectFit="cover"
 					/>
 				</div>
-				<div className="absolute top-0 w-full h-full bg-[#949494] opacity-0 hover:opacity-80 transition-opacity duration-300 ease-in-out hover:cursor-pointer rounded-t-md flex items-end justify-end p-4">
+				<div className="absolute top-0 z-10 w-full h-full bg-[#949494] opacity-0 hover:opacity-80 transition-opacity duration-300 ease-in-out hover:cursor-pointer rounded-t-md flex items-end justify-end p-4">
 					<Button className="flex items-center gap-2 justify-center w-fit bg-transparent border-4 border-primary rounded-full text-black hover:bg-transparent/10">
 						Edit Sampul
 					</Button>
 				</div>
-				<div className="absolute size-40 -bottom-10 left-4 rounded-full bg-white border-4 border-white">
+				<div className="absolute size-40 z-20 -bottom-10 left-4 rounded-full bg-white border-4 border-white">
 					<Image
 						src={user.profile_picture}
 						alt="Profile Picture"
@@ -52,7 +52,7 @@ export default function ProfilePanel({ user }: Props) {
 						objectFit="cover"
 					/>
 				</div>
-				<div className="bg-[#949494] size-40 rounded-full absolute -bottom-10 left-4 z-50 opacity-0 hover:opacity-80 transition-opacity duration-300 ease-in-out hover:cursor-pointer flex justify-center items-center">
+				<div className="bg-[#949494] size-40 rounded-full absolute -bottom-10 left-4 z-20 opacity-0 hover:opacity-80 transition-opacity duration-300 ease-in-out hover:cursor-pointer flex justify-center items-center">
 					<IcBaselineEdit fontSize={48} />
 				</div>
 			</div>
@@ -60,7 +60,7 @@ export default function ProfilePanel({ user }: Props) {
 				<div className="flex flex-col gap-4 h-full justify-between">
 					<div className="flex flex-col sm:flex-row gap-4 sm:justify-between">
 						<div className="flex flex-col">
-							<div className="flex items-center gap-2 group">
+							<div className="flex items-center gap-2 group z-20">
 								<span className="font-extrabold text-2xl sm:text-4xl">
 									{user.name}
 								</span>
@@ -76,7 +76,7 @@ export default function ProfilePanel({ user }: Props) {
 							Daftar sebagai UMKM
 						</Button>
 					</div>
-					<div className="flex  group">
+					<div className="flex group z-20">
 						<p className="font-medium">{user.description}</p>
 						<IcBaselineEdit
 							fontSize={24}
