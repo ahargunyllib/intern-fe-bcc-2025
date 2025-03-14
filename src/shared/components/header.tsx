@@ -103,6 +103,8 @@ export default function Header() {
 							<div
 								key={route.name}
 								className="flex flex-col gap-2 px-4 sm:px-20 hover:tracking-wider transition-all duration-300 ease-in-out"
+								onClick={() => setOpen(false)}
+								onKeyDown={() => {}}
 							>
 								<Link
 									href={route.href}
