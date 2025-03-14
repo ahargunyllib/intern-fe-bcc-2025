@@ -18,7 +18,6 @@ export default function RegisterForm() {
 				email: "",
 			}}
 			onSubmit={(values) => {
-				console.log(values);
 				toast.warning("Fitur belum bisa digunakan", {
 					description: "Lanjut ke halaman onboarding",
 					action: (

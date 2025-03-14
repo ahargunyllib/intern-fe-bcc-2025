@@ -56,12 +56,12 @@ export default function Header() {
 						<LucideLogOut
 							className="text-white cursor-pointer"
 							fontSize={24}
-							onClick={() => console.log("logout")}
+							onClick={() => {}}
 						/>
 						<RiCustomerService2Fill
 							className="text-white cursor-pointer"
 							fontSize={24}
-							onClick={() => console.log("customer service")}
+							onClick={() => {}}
 						/>
 					</div>
 				</div>

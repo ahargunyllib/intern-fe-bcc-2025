@@ -30,9 +30,7 @@ export default function PasswordFormSection() {
 							password: "",
 							confirmPassword: "",
 						}}
-						onSubmit={(values) => {
-							console.log(values);
-						}}
+						onSubmit={(values) => {}}
 					>
 						<Form className="flex flex-col gap-4">
 							<FormFieldInput
