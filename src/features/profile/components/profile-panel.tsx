@@ -8,7 +8,6 @@ import {
 } from "@/shared/components/icons";
 import Button from "@/shared/components/ui/button";
 import Image from "next/image";
-import { useState } from "react";
 
 type Props = {
 	user: {
@@ -29,9 +28,6 @@ type Props = {
 };
 
 export default function ProfilePanel({ user }: Props) {
-	const [isHoverDisplayName, setIsHoverDisplayName] = useState(false);
-	const [isHoverescription, setIsHoverDescription] = useState(false);
-
 	return (
 		<div className="bg-white shadow-md rounded-md">
 			<div className="h-64 relative">
