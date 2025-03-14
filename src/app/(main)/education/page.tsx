@@ -1,10 +1,14 @@
 import SearchBar from "@/shared/components/search-bar";
 import Image from "next/image";
+import { Suspense } from "react";
 
 export default function Page() {
 	return (
 		<div className="flex flex-col gap-4 w-full">
-			<SearchBar />
+			<Suspense>
+				<SearchBar />
+			</Suspense>
+
 			<div className="w-full p-4 bg-white shadow-md rounded-md flex flex-col gap-2">
 				<h2 className="font-bold text-2xl">Edukasi</h2>
 				<div className="flex flex-row gap-4 w-full overflow-x-auto">
