@@ -10,7 +10,7 @@ export default function CreatePostForm() {
 
 	return (
 		<Button
-			className="rounded-full size-20 fixed bottom-4 self-end"
+			className="rounded-full size-20 fixed bottom-4 self-end z-50"
 			onClick={() =>
 				openModal({
 					children: (
