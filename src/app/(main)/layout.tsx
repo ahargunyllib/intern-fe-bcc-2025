@@ -15,7 +15,7 @@ export default function Layout({
 
 				<div className="hidden lg:flex flex-col gap-6 w-1/4 ">
 					<TrendingHashtagPanel trendingHashtags={dummyTrendingHashtags} />
-					<TrendingPostPanel />
+					<TrendingPostPanel trendingPosts={dummyTrendingPosts} />
 				</div>
 			</div>
 		</div>
@@ -27,4 +27,30 @@ const dummyTrendingHashtags = [
 	"DimsumViral",
 	"BebekGorengJKT",
 	"BaksoDisko",
+];
+
+const dummyTrendingPosts: {
+	id: string;
+	profilePicture: string;
+	displayName: string;
+	image_url: string;
+}[] = [
+	{
+		id: "1",
+		profilePicture: `https://picsum.photos/seed/${Math.random() * 100}/64/64`,
+		displayName: "John Doe",
+		image_url: `https://picsum.photos/seed/${Math.random() * 100}/1920/1080`,
+	},
+	{
+		id: "2",
+		profilePicture: `https://picsum.photos/seed/${Math.random() * 100}/64/64`,
+		displayName: "Jane Doe",
+		image_url: `https://picsum.photos/seed/${Math.random() * 100}/1920/1080`,
+	},
+	{
+		id: "3",
+		profilePicture: `https://picsum.photos/seed/${Math.random() * 100}/64/64`,
+		displayName: "John Doe",
+		image_url: `https://picsum.photos/seed/${Math.random() * 100}/1920/1080`,
+	},
 ];
