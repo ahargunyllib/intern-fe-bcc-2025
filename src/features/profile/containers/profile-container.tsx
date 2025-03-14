@@ -13,8 +13,8 @@ export default function ProfileContainer() {
 }
 
 const dummyUser = {
-	banner: "/dummy-profile-banner.png",
-	profile_picture: "/dummy-profile-picture.png",
+	banner: `https://picsum.photos/seed/${Math.random() * 100}/1920/1080`,
+	profile_picture: `https://picsum.photos/seed/${Math.random() * 100}/128/128`,
 	name: "Locapreneur.id",
 	username: "umkmutuindonesiamaju",
 	description:

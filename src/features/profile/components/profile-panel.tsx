@@ -50,6 +50,7 @@ export default function ProfilePanel({ user }: Props) {
 						alt="Profile Picture"
 						fill
 						objectFit="cover"
+						className="rounded-full"
 					/>
 				</div>
 				<div className="bg-[#949494] size-40 rounded-full absolute -bottom-10 left-4 z-20 opacity-0 hover:opacity-80 transition-opacity duration-300 ease-in-out hover:cursor-pointer flex justify-center items-center">
