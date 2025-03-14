@@ -23,9 +23,9 @@ export default function Page() {
 						<div
 							// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 							key={index}
-							className="flex flex-row gap-4 hover:cursor-pointer"
+							className="flex flex-col lg:flex-row gap-4 hover:cursor-pointer"
 						>
-							<div className="bg-gray-400 cursor-pointer h-40 w-64 flex-shrink-0" />
+							<div className="bg-gray-400 cursor-pointer h-40 w-full lg:w-64 flex-shrink-0" />
 							<div className="flex flex-col leading-none">
 								<span className="font-semibold text-xl">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit.
