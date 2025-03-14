@@ -1,13 +1,15 @@
 "use client";
 
 import CatalogPanel from "@/features/profile/components/catalog-panel";
+import CreatePostForm from "@/features/profile/components/create-post-form";
 import ProfilePanel from "@/features/profile/components/profile-panel";
 
 export default function ProfileContainer() {
 	return (
-		<div className="flex flex-col gap-6 w-full">
+		<div className="relative flex flex-col gap-6 w-full">
 			<ProfilePanel user={dummyUser} />
 			<CatalogPanel catalogs={dummyCatalogs} />
+			<CreatePostForm />
 		</div>
 	);
 }
