@@ -15,8 +15,8 @@ export default function ProfileContainer() {
 }
 
 const dummyUser = {
-	banner: `https://picsum.photos/seed/${Math.random() * 100}/1920/1080`,
-	profile_picture: `https://picsum.photos/seed/${Math.random() * 100}/128/128`,
+	banner: "https://picsum.photos/seed/maaf/1920/1080",
+	profile_picture: "https://picsum.photos/seed/ga/128/128",
 	name: "Locapreneur.id",
 	username: "umkmutuindonesiamaju",
 	description:
@@ -28,14 +28,14 @@ const dummyUser = {
 const dummyCatalogs = [
 	{
 		name: "Catalog 1",
-		url: `https://picsum.photos/seed/${Math.random() * 100}/1920/1080`,
+		url: "https://picsum.photos/seed/di/1920/1080",
 	},
 	{
 		name: "Catalog 2",
-		url: `https://picsum.photos/seed/${Math.random() * 100}/1920/1080`,
+		url: "https://picsum.photos/seed/integrasi/1920/1080",
 	},
 	{
 		name: "Catalog 3",
-		url: `https://picsum.photos/seed/${Math.random() * 100}/1920/1080`,
+		url: "https://picsum.photos/seed/hehe/1920/1080",
 	},
 ];

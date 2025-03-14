@@ -57,39 +57,39 @@ export default function Page() {
 const educations = [
 	{
 		id: 1,
-		image_url: `https://picsum.photos/seed/${Math.random()}/640/480`,
+		image_url: "https://picsum.photos/seed/semoga/640/480",
 	},
 	{
 		id: 2,
-		image_url: `https://picsum.photos/seed/${Math.random()}/640/480`,
+		image_url: "https://picsum.photos/seed/join/640/480",
 	},
 	{
 		id: 3,
-		image_url: `https://picsum.photos/seed/${Math.random()}/640/480`,
+		image_url: "https://picsum.photos/seed/fe/640/480",
 	},
 	{
 		id: 4,
-		image_url: `https://picsum.photos/seed/${Math.random()}/640/480`,
+		image_url: "https://picsum.photos/seed/bcc/640/480",
 	},
 ];
 
 const news = [
 	{
 		id: 1,
-		image_url: `https://picsum.photos/seed/${Math.random()}/640/480`,
+		image_url: "https://picsum.photos/seed/thanks/640/480",
 		title:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae autem deleniti nam eaque vel rem aliquid culpa esse minus voluptate dicta consequatur aperiam veritatis doloremque ad quos, repellat at, ipsum quia. Nihil.",
 		date: "2025-02-27T07:00:00.000Z",
 	},
 	{
 		id: 2,
-		image_url: `https://picsum.photos/seed/${Math.random()}/640/480`,
+		image_url: "https://picsum.photos/seed/to/640/480",
 		title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 		date: "2025-03-02T07:00:00.000Z",
 	},
 	{
 		id: 3,
-		image_url: `https://picsum.photos/seed/${Math.random()}/640/480`,
+		image_url: "https://picsum.photos/seed/kingkenzie/640/480",
 		title:
 			"Recusandae autem deleniti nam eaque vel rem aliquid culpa esse minus voluptate dicta consequatur aperiam veritatis doloremque ad quos, repellat at, ipsum quia. Nihil.",
 		date: "2025-03-05T07:00:00.000Z",

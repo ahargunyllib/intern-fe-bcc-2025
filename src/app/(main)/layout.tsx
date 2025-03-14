@@ -37,20 +37,20 @@ const dummyTrendingPosts: {
 }[] = [
 	{
 		id: "1",
-		profilePicture: `https://picsum.photos/seed/${Math.random() * 100}/64/64`,
+		profilePicture: "https://picsum.photos/seed/hai/64/64",
 		displayName: "John Doe",
-		image_url: `https://picsum.photos/seed/${Math.random() * 100}/1920/1080`,
+		image_url: "https://picsum.photos/seed/hehe/1920/1080",
 	},
 	{
 		id: "2",
-		profilePicture: `https://picsum.photos/seed/${Math.random() * 100}/64/64`,
+		profilePicture: "https://picsum.photos/seed/ini/64/64",
 		displayName: "Jane Doe",
-		image_url: `https://picsum.photos/seed/${Math.random() * 100}/1920/1080`,
+		image_url: "https://picsum.photos/seed/ceritanya/1920/1080",
 	},
 	{
 		id: "3",
-		profilePicture: `https://picsum.photos/seed/${Math.random() * 100}/64/64`,
+		profilePicture: "https://picsum.photos/seed/easter/64/64",
 		displayName: "John Doe",
-		image_url: `https://picsum.photos/seed/${Math.random() * 100}/1920/1080`,
+		image_url: "https://picsum.photos/seed/egg/1920/1080",
 	},
 ];
