@@ -29,11 +29,11 @@ export default function Header() {
 			href: "/education",
 			icon: <MingcuteBookLine fontSize={24} />,
 		},
-		{
-			name: "Search",
-			href: "/search",
-			icon: <LineiconsSearch2 fontSize={24} />,
-		},
+		// {
+		// 	name: "Search",
+		// 	href: "/search",
+		// 	icon: <LineiconsSearch2 fontSize={24} />,
+		// },
 	];
 
 	return (
