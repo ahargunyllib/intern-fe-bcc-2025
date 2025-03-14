@@ -13,7 +13,7 @@ export default function Modal({ children, isOpen, closeModal, title }: Props) {
 
 	return (
 		<div
-			className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
+			className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[999]"
 			onClick={closeModal}
 			onKeyDown={() => {}} // TODO
 		>
