@@ -12,6 +12,7 @@ export * from "./lucide-user";
 export * from "./lucide-x";
 export * from "./material-symbols-other-houses";
 export * from "./material-symbols-person-2";
+export * from "./material-symbols-post-add";
 export * from "./mdi-home";
 export * from "./mingcute-book-line";
 export * from "./ri-customer-service-2-fill";
