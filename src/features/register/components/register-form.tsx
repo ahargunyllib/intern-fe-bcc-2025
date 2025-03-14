@@ -29,7 +29,7 @@ export default function RegisterForm() {
 				});
 			}}
 		>
-			<Form className="flex flex-col gap-4">
+			<Form className="flex flex-col gap-4 w-full">
 				<FormFieldInput
 					name="display_name"
 					label="Nama Tampilan"
@@ -43,7 +43,7 @@ export default function RegisterForm() {
 					placeholder="Email"
 					prefixIcon={<LucideMail width={16} height={16} />}
 				/>
-				<Button type="submit" disabled={false} className="mt-4">
+				<Button type="submit" disabled={false}>
 					Buat Akun
 				</Button>
 			</Form>

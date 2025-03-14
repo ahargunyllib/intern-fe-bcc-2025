@@ -33,7 +33,7 @@ export default function LoginForm() {
 				login(values);
 			}}
 		>
-			<Form className="flex flex-col gap-4">
+			<Form className="flex flex-col gap-4 w-full">
 				<FormFieldInput
 					name="email"
 					label="Email"
